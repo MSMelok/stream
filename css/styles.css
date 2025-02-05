@@ -80,13 +80,13 @@ body {
 }
 
 .settings-menu {
-    flex: 1;
+    flex: 1.2;
     max-width: 750px;
 }
 
 .settings-description {
     position: relative;
-    left: 30%;
+    left: 20%;
     top: 20rem;
     flex: 1;
     padding: 20px;
