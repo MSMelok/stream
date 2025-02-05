@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Optimum Stream Mockup</title>
-    <link rel="stylesheet" href="./css/styles.css
-    ">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimum TV - Settings</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <div class="tv-container">
-        <div class="tv-screen">
-
-        </div>
-        
+  <!-- Header Navigation Bar -->
+  <div class="header">
+    <div class="nav">
+      <span class="active">Home</span>
+      <span>Guide</span>
+      <span>On Demand</span>
+      <span>Sports</span>
+      <span>DVR</span>
+      <span>Apps</span>
+      <span class="icon"><i class="fas fa-search"></i></span>
+      <span class="icon"><i class="fas fa-cog"></i></span>
     </div>
-    <script src="scripts.js"></script>
+    <div class="nav-right">
+      <span class="logo"><span class="optimumWord">Optimum</span><span class="optimumDot">.</span>tv</span>
+      <span class="time" id="current-time"></span>
+    </div>
+  </div>
+
+  <!-- Main Content (Settings Page) -->
+  <div class="container">
+    <div class="settings-wrapper">
+      <!-- Left: Menu Options -->
+      <div class="settings-menu">
+        <h1>Settings</h1>
+        <h3 class="sub-header">Optimum TV</h3>
+
+        <button class="menu-button" data-text="You can set your favorite channels, then you can filter the guide to only show your favorite channels.">
+          Favorite Channels <span class="arrow">></span>
+        </button>
+        <button class="menu-button" data-text="no text available yet">DVR Preferences <span class="arrow">></span></button>
+        <button class="menu-button" data-text="no text available yet">Secondary Audio Program (SAP) <span class="arrow">></span></button>
+        <button class="menu-button" data-text="no text available yet">Parental Controls <span class="arrow">></span></button>
+        <button class="menu-button" data-text="no text available yet">Purchase PIN <span class="arrow">></span></button>
+        <button class="menu-button" data-text="You can change the channel that your Optimum TV services will start on.">
+          Default Channel <span class="arrow">News 12</span>
+        </button>
+        <button class="menu-button" data-text="no text available yet">My Account <span class="arrow">></span></button>
+
+        <h3 class="sub-header">General</h3>
+        <button class="menu-button" data-text="no text available yet">Accessibility <span class="arrow">></span></button>
+        <button class="menu-button" data-text="no text available yet">Device & Remote Settings <span class="arrow">></span></button>
+        <button class="menu-button" data-text="no text available yet">Help <span class="arrow">></span></button>
+      </div>
+
+      <!-- Right: Description Box -->
+      <div class="settings-description">
+        <p id="description-text"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
