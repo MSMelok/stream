@@ -46,6 +46,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
+    const overlay = document.getElementById('overlay');
+
+    // Display the overlay
+    overlay.style.display = "flex";
+
+    // Hide the overlay after 5 seconds
+    setTimeout(function () {
+        overlay.style.display = "none"; // Hide it after 5 seconds
+    }, 4000);
+
+
 
     // Function to update the time dynamically
     function updateTime() {
