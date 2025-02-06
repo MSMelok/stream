@@ -5,20 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Optimum TV - Settings</title>
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/homeStyles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <!-- Header Navigation Bar -->
   <div class="header">
     <div class="nav">
-      <span class="active">Home</span>
-      <span>Guide</span>
-      <span>On Demand</span>
-      <span>Sports</span>
-      <span>DVR</span>
-      <span>Apps</span>
+      <span class="tab-button active" data-target="homeDiv">Home</span>
+      <span class="tab-button" data-target="guideDiv">Guide</span>
+      <span class="tab-button" data-target="onDemandDiv">On Demand</span>
+      <span class="tab-button" data-target="sportsDiv">Sports</span>
+      <span class="tab-button" data-target="dvrDiv">DVR</span>
+      <span class="tab-button" data-target="appsDiv">Apps</span>
       <span class="icon"><i class="fas fa-search"></i></span>
-      <span class="icon"><i class="fas fa-cog"></i></span>
+      <span class="icon tab-button" data-target="settingsDiv"><i class="fas fa-cog"></i></span>
     </div>
     <div class="nav-right">
       <span class="logo"><span class="optimumWord">Optimum</span><span class="optimumDot">.</span>tv</span>
@@ -26,8 +27,95 @@
     </div>
   </div>
 
+
+
+
+  <!-- Main Content (Home Page) -->
+<div class="tab-content home-container" id="homeDiv">
+  <div class="featured-program">
+      <h2>Expedition Unknown</h2>
+      <div class="channel-info">
+          <img src="./assets/Discovery_Logo.png" alt="Discovery Channel Logo">
+          <span>4:00 PM - 5:00 PM</span>
+      </div>
+      <div class="buttons">
+          <button class="watch-now">Watch Now</button>
+          <button class="more-info">More Info</button>
+      </div>
+  </div>
+
+  <div class="recent-channels">
+      <h3 class="sub-header">Recent Channels</h3>
+      <div class="channel-list">
+          <img src="./assets/amcMedia.jpg" alt="AMC">
+          <img src="./assets/historyChannel.jpg" alt="History Channel">
+          <img src="./assets/news12Channel.png" alt="News 12">
+          <img src="./assets/tlcChannel.png" alt="TLC">
+          <img src="./assets/chedderChannel.jpg" alt="Chedder">
+      </div>
+  </div>
+
+  <div class="favorite-apps">
+      <h3 class="sub-header">Favorite Apps</h3>
+      <div class="app-list">
+          <img src="./assets/netflexApp.png" alt="Netflix">
+          <img src="./assets/primeVideoApp.jpg" alt="Prime Video">
+          <img src="./assets/maxApp.jpeg" alt="Max">
+          <img src="./assets/appleTvApp.jpg" alt="Apple TV">
+          <img src="./assets/starzPlayApp.jpg" alt="Starz">
+      </div>
+  </div>
+</div>
+
+
+<!-- Main Content (Guide Page) -->
+<div class="tab-content guide-container" id="guideDiv">
+
+  <h1>This is Guide <br> NO CONTENT AVAILABLE... YET</h1>
+  
+</div>
+
+
+
+  <!-- Main Content (On Demand Page) -->
+  <div class="tab-content onDemend-container" id="onDemandDiv">
+
+    <h1>This is On Demand <br> NO CONTENT AVAILABLE... YET</h1>
+    
+  </div>
+
+
+
+  <!-- Main Content (Sports Page) -->
+  <div class="tab-content sports-container" id="sportsDiv">
+
+    <h1>This is Sports <br> NO CONTENT AVAILABLE... YET</h1>
+    
+  </div>
+
+
+
+  <!-- Main Content (DVR Page) -->
+  <div class="tab-content dvr-container" id="dvrDiv">
+
+    <h1>This is DVR <br> NO CONTENT AVAILABLE... YET</h1>
+    
+  </div>
+
+
+
+  <!-- Main Content (Apps Page) -->
+  <div class="tab-content apps-container" id="appsDiv">
+
+    <h1>This is Apps <br> NO CONTENT AVAILABLE... YET</h1>
+    
+  </div>
+
+
+  
+
   <!-- Main Content (Settings Page) -->
-  <div class="container">
+  <div class="tab-content settings-container" id="settingsDiv">
     <div class="settings-wrapper">
       <!-- Left: Menu Options -->
       <div class="settings-menu">
