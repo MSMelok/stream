@@ -203,7 +203,7 @@ body {
 .settings-container {
     margin: 25px 85px 90px 50px;
     width: 80%;
-    max-width: 1000px;
+    max-width: 600px;
 }
 
 .settings-wrapper {
@@ -219,10 +219,9 @@ body {
 
 .settings-description {
     position: relative;
-    left: 20%;
-    top: 20rem;
+    left: 100%;
+    bottom: 35rem;
     flex: 1;
-    padding: 20px;
     border-radius: 10px;
     margin-left: 40px;
     min-height: 200px;
@@ -232,7 +231,9 @@ body {
     color: #cdcccc;
     font-size: 22px;
     font-weight: 400;
+    max-width: 400px;
 }
+
 
 /* Titles */
 h1, h2 {
@@ -272,3 +273,62 @@ h1, h2 {
 .arrow {
     font-size: 20px;
 }
+
+
+.rightPanel {
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100%;
+    background-color: #152b55f2;
+    color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    overflow: 0;
+    transition: right 0.3s ease-in-out; /* Smooth transition */
+}
+
+.settingsHead {
+    font-size: 26px;
+    color: white;
+    background-color: #011741;
+    margin: 0px 0px 24px;
+    padding: 50px 20px 20px;
+    width: 100%;
+}
+
+.settingsParagraph {
+    margin: 0px 15px;
+    font-weight: 600;
+    color: #c1c1c1;
+}
+
+.settingsOptions {
+    font-size: 24px;
+    display: flex;
+    margin: 15px 25px;
+    flex-direction: column;
+}
+
+.setting-item {
+    font-family: inherit;
+    font-size: 24px;
+    padding: 22px 0px;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    font-weight: 600;
+}
+
+
+.settingsOptions :hover {
+    background-color: #153369;
+}
+
+
+  
+
+  
+
+  
